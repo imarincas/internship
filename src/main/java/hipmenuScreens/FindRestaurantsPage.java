@@ -39,7 +39,7 @@ public class FindRestaurantsPage {
     }
 
     public FindRestaurantsPage verifyTitle(){
-        Assert.assertTrue(findRestaurantsPageTitle.getText().contains("Ajută-ne să găsim restaurante în zona ta."));
+        Assert.assertTrue(findRestaurantsPageTitle.getText().contains("Ajută-ne să găsim"));
         return this;
     }
 

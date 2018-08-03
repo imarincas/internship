@@ -21,9 +21,10 @@ public class BaseTest {
 //		driver.get("https://demoqa.com");
 //      driver.get("https://www.cel.ro/index.php?main_page=login");
 //      driver.get("http://toolsqa.com/automation-practice-switch-windows/");
-        driver.get("http://www.delonghi.com/ro-ro");
+//      driver.get("http://www.delonghi.com/ro-ro");
+        driver.get("https://www.hipmenu.ro");
         //driver.get("http://toolsqa.com/");
-	    //driver.manage().window().maximize();
+	    driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
