@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BaseTest {
@@ -14,8 +15,9 @@ public class BaseTest {
 	@Before
 	public void setup()
 	{
-		System.setProperty("webdriver.gecko.driver", "C:\\Development\\Drivers\\geckodriver.exe");
-		driver=new FirefoxDriver();
+//		System.setProperty("webdriver.gecko.driver", "C:\\Development\\Drivers\\geckodriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Development\\Drivers\\chromedriver.exe");
+		driver=new ChromeDriver();
 //		driver.get("https://demoqa.com");
 //      driver.get("https://www.cel.ro/index.php?main_page=login");
 //      driver.get("http://toolsqa.com/automation-practice-switch-windows/");
